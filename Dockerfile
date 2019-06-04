@@ -23,7 +23,7 @@ COPY scripts/cron_sa-update /etc/cron.daily/sa-update
 COPY config/default_spamassassin /etc/default/spamassassin
 COPY config/local.cf /etc/spamassassin/local.cf
 
-COPY docker-entrypoint.sh docker-entrypoint.sh
+COPY scripts/docker-entrypoint.sh docker-entrypoint.sh
 RUN touch /tmp/INIT &&\
     chown debian-spamd:debian-spamd /docker-entrypoint.sh /tmp/INIT &&\
     chmod 500 /docker-entrypoint.sh /etc/cron.daily/sa-update
