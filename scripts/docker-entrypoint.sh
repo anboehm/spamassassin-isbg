@@ -57,7 +57,7 @@ do
 
 #  echo "Starting scan on $(date)"
   isbg \
-    --flag \
+    --delete \
     --imaphost="$IMAPSERVER" \
     --imapuser="$IMAPUSER" \
     --imappasswd="$IMAPPASS" \
