@@ -9,7 +9,7 @@
 
 #   Add *****SPAM***** to the Subject header of spam e-mails
 #
-rewrite_header Subject *****SPAM*****
+# rewrite_header Subject *****SPAM*****
 dns_available yes
 dns_server 127.0.0.1
 
